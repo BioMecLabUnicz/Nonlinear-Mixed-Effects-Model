@@ -1,1 +1,4 @@
-
+The folder contains:
+- Experimental cTnT measurements for all the 27 patients, with relative clinical co-factors
+- All file .m reletad to the cardiac model
+- Model to import in Monolix (cTnT.txt)
