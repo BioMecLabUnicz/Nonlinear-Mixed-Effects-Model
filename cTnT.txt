@@ -1,0 +1,21 @@
+[LONGITUDINAL]
+input = {a, b, Td, Cs0, Cc0}
+
+EQUATION:
+
+;b = 0.5
+;Cs0 = 25.14
+
+t0 = 0
+Cs_0 = Cs0
+Cc_0 = Cc0
+Cp_0 = 0
+
+Gamma = t^3/(t^3+Td^3)
+
+ddt_Cs = -(Cs - Cc)*Gamma
+ddt_Cc = (Cs - Cc)*Gamma - a*(Cc - Cp)
+ddt_Cp = a*(Cc - Cp) - b*Cp
+
+OUTPUT:
+output = {Cp}
